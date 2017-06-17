@@ -1,0 +1,9 @@
+language: node
+services:
+  - docker
+install:
+  - docker build -t mapic/mongo .
+  - docker run -d --name mongo mapic/mongo
+script:
+  - docker ps | grep -q mongo
+  
