@@ -1,5 +1,5 @@
-# mapic/mongo [![Travis](https://img.shields.io/travis/mapic/docker-mapic-mongo.svg)]() [![Docker Build Statu](https://img.shields.io/docker/build/mapic/mongo.svg?style=flat-square)]() [![Docker Automated buil](https://img.shields.io/docker/automated/mapic/mongo.svg)]()
-Dockerfiles for `mapic/mongo:latest` Docker image. 
+# mapic/mongo [![Build Status](https://travis-ci.org/mapic/docker-mapic-mongo.svg?branch=master)](https://travis-ci.org/mapic/docker-mapic-mongo) [![Docker Build Statu](https://img.shields.io/docker/build/mapic/mongo.svg?style=flat-square)](https://hub.docker.com/r/mapic/mongo/) [![Docker Automated buil](https://img.shields.io/docker/automated/mapic/mongo.svg)](https://hub.docker.com/r/mapic/mongo/)
 
+Dockerfiles for `mapic/mongo:latest` Docker image. 
 
 Based on [`mongo:latest`](https://hub.docker.com/_/mongo/).
