@@ -1,4 +1,4 @@
-# mapic/mongo [![Docker Build Statu](https://img.shields.io/docker/build/mapic/mongo.svg?style=flat-square)]() [![Docker Automated buil](https://img.shields.io/docker/automated/mapic/mongo.svg)]()
+# mapic/mongo [![Travis](https://img.shields.io/travis/mapic/docker-mapic-mongo.svg)]() [![Docker Build Statu](https://img.shields.io/docker/build/mapic/mongo.svg?style=flat-square)]() [![Docker Automated buil](https://img.shields.io/docker/automated/mapic/mongo.svg)]()
 Dockerfiles for `mapic/mongo:latest` Docker image. 
 
 
