@@ -6,6 +6,7 @@
 # 1.1: start mongodb without auth
 # 1.2: add admin/user with pass
 # 2: restart mongo with auth config
+echo "MongoDB start script: start.sh"
 
 # config path (never changes)
 CONFIGFILE=/mapic/config/mongod.conf
