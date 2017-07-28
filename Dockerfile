@@ -3,10 +3,8 @@ MAINTAINER <knutole@mapic.io>
 
 # add start scripts
 ADD init_mongo.js /init_mongo.js
-ADD start.sh /start.sh
-ADD init.sh /init.sh
-RUN chmod +x /start.sh
-RUN chmod +x /init.sh
+ADD docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
 
 # start
-CMD /start.sh
+CMD /docker-entrypoint.sh

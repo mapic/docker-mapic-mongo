@@ -43,9 +43,9 @@ init_mongo () {
 touch /etc/mongod.log
 
 # if script has been updated, or never inited, run init_mongo
-if [[ /init_mongo.js -nt /data/db/mapic.inited ]]; then
+# if [[ /init_mongo.js -nt /data/db/mapic.inited ]]; then
 	init_mongo || abort "Failed to initialize MongoDB. Quitting!"
-fi
+# fi
 
 # echo "Starting MongoDB with AUTH";
 mongod -f $CONFIGFILE --auth || abort "Failed to start MongodB. Quitting!"
