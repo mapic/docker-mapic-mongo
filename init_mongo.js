@@ -8,6 +8,14 @@ var password = config.password;
 var user = config.user;
 var database = config.database || 'mapic';
 
+console.log('####################');
+console.log('####################');
+console.log('####################');
+console.log('# mongo init')
+console.log('# password', password);
+console.log('# user: ', user);
+console.log('# db', database);
+
 // prime db for auth
 var admin = connect('localhost:27017/admin');
 admin.system.users.remove({})
