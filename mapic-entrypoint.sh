@@ -9,7 +9,8 @@
 echo "MongoDB start script: start.sh"
 
 # config path (never changes)
-CONFIGFILE=/mapic/config/mongod.conf
+# CONFIGFILE=/mapic/config/mongod.conf
+CONFIGFILE=/mapic/mongod.conf
 
 function abort() {
 	echo $1
@@ -27,7 +28,8 @@ init_mongo () {
 	sleep 3 # todo: check if up instead
 
 	# run init script (adding AUTH capabilities)
-	mongo /init_mongo.js
+	# mongo /mapic/init_mongo.js
+	mongo --eval "var MAPIC_MONGO_AUTH = \"$MAPIC_MONGO_AUTH\"; var MAPIC_MONGO_DB = \"$MAPIC_MONGO_DB\"; var MAPIC_MONGO_USER = \"$MAPIC_MONGO_USER\"" /mapic/init_mongo.js
 
 	# kill mongo
 	kill $LAST_PID;

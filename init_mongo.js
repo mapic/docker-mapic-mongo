@@ -1,20 +1,16 @@
 
 // read config
-var configFile = cat('/mapic/config/mongo.json');
+// var configFile = cat('/mapic/config/mongo.json');
 
 // parse config
-var config = JSON.parse(configFile);
-var password = config.password;
-var user = config.user;
-var database = config.database || 'mapic';
-
-console.log('####################');
-console.log('####################');
-console.log('####################');
-console.log('# mongo init')
-console.log('# password', password);
-console.log('# user: ', user);
-console.log('# db', database);
+// var config = JSON.parse(configFile);
+// var password = config.password;
+// var user = config.user;
+// var database = config.database || 'mapic';
+// var config = JSON.parse(configFile);
+var password = MAPIC_MONGO_AUTH;
+var user = MAPIC_MONGO_USER || 'mapic_mongo_user';
+var database = MAPIC_MONGO_DB || 'mapic';
 
 // prime db for auth
 var admin = connect('localhost:27017/admin');
