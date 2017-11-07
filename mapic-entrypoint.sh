@@ -25,7 +25,7 @@ init_mongo () {
 	LAST_PID=$!
 
 	# wait for up
-	sleep 3 # todo: check if up instead
+	sleep 10 # todo: check if up instead
 
 	# run init script (adding AUTH capabilities)
 	# mongo /mapic/init_mongo.js
@@ -35,7 +35,7 @@ init_mongo () {
 	kill $LAST_PID;
 
 	# wait for down
-	sleep 3 # todo: check if down instead
+	sleep 10 # todo: check if down instead
 
 	# mark inited
 	touch /data/db/mapic.inited
