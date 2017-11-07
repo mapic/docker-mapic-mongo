@@ -1,13 +1,5 @@
 
-// read config
-// var configFile = cat('/mapic/config/mongo.json');
-
-// parse config
-// var config = JSON.parse(configFile);
-// var password = config.password;
-// var user = config.user;
-// var database = config.database || 'mapic';
-// var config = JSON.parse(configFile);
+// get env
 var password = MAPIC_MONGO_AUTH;
 var user = MAPIC_MONGO_USER || 'mapic_mongo_user';
 var database = MAPIC_MONGO_DB || 'mapic';
